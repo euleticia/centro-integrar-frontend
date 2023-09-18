@@ -1,41 +1,58 @@
+body {
+  /* padding-top: 70px;Para compensar a altura do menu fixo */
+}
+
 .navbar {
-    background-color: #333; /* Cor de fundo da barra de navegação */
+  background-color: #333;
+  /* Cor de fundo da barra de navegação */
 }
 
 .navbar-brand {
-    color: #fff; /* Cor do texto do logo */
-    font-size: 24px; /* Tamanho da fonte do logo */
+  color: #fff;
+  /* Cor do texto do logo */
+  font-size: 24px;
+  /* Tamanho da fonte do logo */
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: #fff; /* Cor do texto dos itens de navegação */
+  color: #a09a9a;
+  /* Cor do texto dos itens de navegação */
 }
 
-
-body {
-    padding-top: 70px; /* Para compensar a altura do menu fixo */
-  }
-
-  #menu {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-  }
-
-  #menu li {
-    list-style-type: none;
-    margin-left: 10px;
-  }
-  .footer {
+#menu {
+  background-color: white;
   position: fixed;
-  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+#menu li {
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+.container.mt-4 {
+  top: 100px;
+}
+
+.container {
+  padding-bottom: 10px;
+  min-height: 100%;
+  position: relative;
+}
+
+.custom-spacing {
+  margin-left: 20%;
+}
+
+footer {
+  position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
+  padding: 10px;
+  background-color: #271344 ;
 }
