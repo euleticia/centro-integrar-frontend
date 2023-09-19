@@ -1,30 +1,26 @@
 body {
-  /* padding-top: 70px;Para compensar a altura do menu fixo */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Adicionando uma fonte genérica */
+  height: 2000px;
 }
 
 .navbar {
   background-color: #333;
-  /* Cor de fundo da barra de navegação */
+  color: #fff;
+  padding: 10px;
 }
 
-.navbar-brand {
-  color: #fff;
-  /* Cor do texto do logo */
-  font-size: 24px;
-  /* Tamanho da fonte do logo */
+img {
+  width: 200px;
+  height: 150px;
 }
 
 .navbar-nav .nav-item .nav-link {
-  color: #a09a9a;
-  /* Cor do texto dos itens de navegação */
+  color: #020202;
 }
 
 #menu {
   background-color: white;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
   padding: 10px;
 }
 
@@ -33,14 +29,8 @@ body {
   margin-left: 10px;
 }
 
-.container.mt-4 {
-  top: 100px;
-}
-
 .container {
-  padding-bottom: 10px;
-  min-height: 100%;
-  position: relative;
+  padding: 20px;
 }
 
 .custom-spacing {
@@ -54,5 +44,33 @@ footer {
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 10px;
-  background-color: #271344 ;
+  background-color: #271344;
+}
+
+/* Media queries para tornar o layout responsivo */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+
+  .custom-spacing {
+    margin-left: 0;
+  }
+}
+
+
+.background-image {
+  background-image: url('../assets/criancas2.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center; 
+  padding: 50px; 
+}
+
+/* Estilo para o título "Acompanhamento" dentro da div com a imagem de fundo */
+.background-image h2 {
+  color: white; /* Cor do texto */
+  font-size: 35px; /* Tamanho da fonte */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
